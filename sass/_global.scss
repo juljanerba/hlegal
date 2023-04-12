@@ -1,0 +1,49 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--color-main-regular)
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.center {
+  padding-left: calc(50vw - 172px);
+  padding-right: calc(50vw - 172px);
+}
+
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-main-regular);
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+
+
+a {
+  color: var(--color-active-regular)
+}
+a:hover {
+  color: var(--color-active-hover)
+}
+
