@@ -1,6 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background: var(--color-main-regular)
+  background: var(--color-main-regular);
+  position: relative;
 }
 
 .visually-hidden {
@@ -20,7 +21,7 @@ body {
 
 
 h1, h2, h3, h4 {
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--color-main-regular);
 }
@@ -47,3 +48,9 @@ a:hover {
   color: var(--color-active-hover)
 }
 
+@media screen and (min-width: 768px ) {
+  .center {
+    padding-left: calc(50vw - 324px);
+    padding-right: calc(50vw - 324px);
+  }
+}

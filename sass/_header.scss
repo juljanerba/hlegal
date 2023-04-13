@@ -1,6 +1,5 @@
 .header {
   &--lang-bar {
-    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -8,10 +7,14 @@
     background: rgba(245, 245, 250, 0.2);
 
     .languages {
+      padding: 13px 15px;
       display: flex;
       list-style-type: none;
       margin: 0;
-      padding: 0;
+
+      & .active {
+        background-color: var(--color-accent);
+      }
 
       a {
         text-decoration: none;
@@ -19,9 +22,21 @@
         font-weight: 700;
         font-size: 12px;
         letter-spacing: 1px;
-        padding: 7px;
+        padding: 5px 7px;
         border-radius: 8px;
       }
+    }
+
+    .separator {
+      display: none;
+    }
+
+    .adress {
+      display: none;
+    }
+
+    .facebook {
+      display: none;
     }
 
     .phone-number {
@@ -32,7 +47,7 @@
     }
   }
 
-  &--logo-bar {
+  &--bar {
     padding-top: 15px;
     padding-bottom: 12px;
     display: flex;
@@ -41,18 +56,94 @@
     .logo-link {
       padding-bottom: 3px;
       margin-right: 4px;
-      img{
+
+      img {
         width: 69px;
       }
     }
+
     p {
       color: var(--color-basic-white);
       margin: 0;
       font-size: 20px;
     }
+
+    &-nav {
+      display: none;
+    }
   }
 }
 
-.languages .active {
-  background-color: var(--color-accent);
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 50px;
+
+    &--lang-bar {
+      background: transparent;
+      justify-content: left;
+      margin-bottom: 30px;
+
+      .languages {
+        padding: 0;
+      }
+
+      .separator {
+        display: flex;
+        font-size: 10px;
+        color: var(--color-grey-separator);
+        margin: 6px;
+      }
+
+      .adress {
+        display: flex;
+        color: var(--color-grey-text);
+        font-size: 16px;
+      }
+
+      .facebook {
+        display: flex;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &--bar {
+      flex-wrap: wrap;
+      padding-top: 0;
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+
+      .logo-link img {
+        width: 130px;
+      }
+
+      .slash {
+        display: none;
+      }
+
+      p {
+        display: none;
+      }
+
+      &-nav {
+        display: flex;
+        padding-top: 30px;
+
+        ul {
+          display: flex;
+          gap: 15px;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+
+          a {
+            text-decoration: none;
+            color: var(--color-basic-white);
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
 }
