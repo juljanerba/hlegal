@@ -12,6 +12,7 @@
     padding-top: 129px;
 
     h1 {
+      font-size: 38px;
       color: var(--color-basic-white);
       max-width: 315px;
       margin: 0 0 159px;
@@ -21,6 +22,7 @@
       display: flex;
       width: 42px;
       height: 42px;
+      margin-bottom: 30px;
       background-image: url("../img/Scroll.svg");
       background-repeat: no-repeat;
       &:hover{
@@ -32,3 +34,54 @@
 }
 
 
+@media screen and (min-width: 768px) {
+  .offer-page {
+    .offer {
+      padding-top: 269px;
+
+      h1 {
+        max-width: none;
+        margin: 0 0 417px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .offer-page {
+    .offer {
+      padding-top: 245px;
+
+      h1 {
+        max-width: none;
+        margin: 0 0 289px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .offer-page {
+    .offer {
+      padding-top: 261px;
+
+      h1 {
+        max-width: none;
+        margin: 0 0 305px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .offer-page {
+    .offer {
+      padding-top: 361px;
+
+      h1 {
+        max-width: none;
+        margin: 0 0 405px;
+      }
+    }
+  }
+}

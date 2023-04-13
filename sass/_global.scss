@@ -19,27 +19,20 @@ body {
   padding-right: calc(50vw - 172px);
 }
 
+ .material-symbols-outlined {
+   font-variation-settings:
+           'FILL' 0,
+           'wght' 400,
+           'GRAD' 0,
+           'opsz' 48
+ }
+
 
 h1, h2, h3, h4 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-main-regular);
 }
-
-h1 {
-  font-size: 38px;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 22px;
-  text-transform: uppercase;
-}
-
-
 
 a {
   color: var(--color-active-regular)
@@ -52,5 +45,20 @@ a:hover {
   .center {
     padding-left: calc(50vw - 324px);
     padding-right: calc(50vw - 324px);
+  }
+}
+
+
+@media screen and (min-width: 1024px ) {
+  .center {
+    padding-left: calc(50vw - 452px);
+    padding-right: calc(50vw - 452px);
+  }
+}
+
+@media screen and (min-width: 1900px ) {
+  .center {
+    padding-left: calc(50vw - 800px);
+    padding-right: calc(50vw - 800px);
   }
 }
