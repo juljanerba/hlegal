@@ -18,6 +18,7 @@
       margin: 0 0 159px;
       text-align: center;
     }
+
     .move-down {
       display: flex;
       width: 42px;
@@ -25,7 +26,8 @@
       margin-bottom: 30px;
       background-image: url("../img/Scroll.svg");
       background-repeat: no-repeat;
-      &:hover{
+
+      &:hover {
         background-image: url("../img/Scroll-active.svg");
 
       }
