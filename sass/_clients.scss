@@ -1,0 +1,123 @@
+.clients {
+
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 auto 30px;
+
+  }
+
+  .client {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .hillel {
+    background: #1C4280;
+
+  }
+
+  .wannabiz {
+    background: #143646;
+
+  }
+
+  .tapgerine {
+    background: #F48B30;
+
+  }
+
+  .treedlook {
+    background: #9E4DC3;
+
+  }
+
+  .orangear {
+    background: #FD9339;
+
+  }
+
+  .adtelligent {
+    background: #E2E2E4;
+
+  }
+
+  .clickkly {
+    background: #C71C36;
+  }
+
+  .ecolease {
+    background: #DCF3F9;
+  }
+
+  .infatek {
+    background: #EAEAEA;
+  }
+
+  .sitipark {
+    background: #282240;
+  }
+
+  .artprint {
+    background: #1D4568;
+  }
+
+  .ultimatecard {
+    background: #000000;
+  }
+
+  .desktop_client {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .clients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    h3 {
+      grid-column: 1/-1;
+    }
+
+    .desktop_client {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .clients {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+
+}
+
+@media screen and (min-width: 1920px) {
+  .clients {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .hillel {
+    border-radius: 12px 0 0 0;
+  }
+  .treedlook {
+    border-radius: 0 12px 0 0;
+  }
+  .infatek {
+    border-radius: 0 0 0 12px;
+  }
+  .ultimatecard {
+    border-radius: 0 0 12px 0;
+  }
+}

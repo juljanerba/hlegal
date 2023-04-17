@@ -1,13 +1,15 @@
 .team {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   background: #F5F5FA;
   box-sizing: border-box;
 
   .slider {
     background: #F5F5FA;
-    width: 85%;
-    margin: 0 auto;
+
+    //margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 
     &-item {
       display: none;
@@ -77,6 +79,8 @@
 
     .slider {
       border-radius: 12px;
+      padding: 0;
+      margin: 0 60px;
 
       &-item {
         flex-wrap: wrap;
@@ -100,9 +104,7 @@
 
 @media screen and (min-width: 1024px) {
   .team {
-
     .slider {
-
       &-item {
         justify-content: flex-start;
         flex-wrap: nowrap;
@@ -117,7 +119,6 @@
             border-radius: 12px 0 0 12px;
           }
         }
-
       }
     }
   }
@@ -125,24 +126,24 @@
 
 @media screen and (min-width: 1440px) {
   .team {
-    padding-right: 160px;
-    padding-left: 160px;
-
     .slider {
-      width: 90%;
-
       &-item {
-
         .photo {
-
           img {
             width: 400px;
             height: 344px;
             border-radius: 12px 0 0 12px;
           }
         }
-
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .team {
+    .slider {
+margin: 0 160px;
     }
   }
 }

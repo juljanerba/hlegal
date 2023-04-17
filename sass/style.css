@@ -373,14 +373,14 @@ a:hover {
 }
 .team {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   background: #F5F5FA;
   box-sizing: border-box;
 }
 .team .slider {
   background: #F5F5FA;
-  width: 85%;
-  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .team .slider-item {
   display: none;
@@ -438,6 +438,8 @@ a:hover {
   }
   .team .slider {
     border-radius: 12px;
+    padding: 0;
+    margin: 0 60px;
   }
   .team .slider-item {
     flex-wrap: wrap;
@@ -467,17 +469,106 @@ a:hover {
   }
 }
 @media screen and (min-width: 1440px) {
-  .team {
-    padding-right: 160px;
-    padding-left: 160px;
-  }
-  .team .slider {
-    width: 90%;
-  }
   .team .slider-item .photo img {
     width: 400px;
     height: 344px;
     border-radius: 12px 0 0 12px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .team .slider {
+    margin: 0 160px;
+  }
+}
+.clients {
+  display: flex;
+  flex-direction: column;
+}
+.clients h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 auto 30px;
+}
+.clients .client {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
+.clients .hillel {
+  background: #1C4280;
+}
+.clients .wannabiz {
+  background: #143646;
+}
+.clients .tapgerine {
+  background: #F48B30;
+}
+.clients .treedlook {
+  background: #9E4DC3;
+}
+.clients .orangear {
+  background: #FD9339;
+}
+.clients .adtelligent {
+  background: #E2E2E4;
+}
+.clients .clickkly {
+  background: #C71C36;
+}
+.clients .ecolease {
+  background: #DCF3F9;
+}
+.clients .infatek {
+  background: #EAEAEA;
+}
+.clients .sitipark {
+  background: #282240;
+}
+.clients .artprint {
+  background: #1D4568;
+}
+.clients .ultimatecard {
+  background: #000000;
+}
+.clients .desktop_client {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .clients h3 {
+    grid-column: 1/-1;
+  }
+  .clients .desktop_client {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .clients {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .clients {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .hillel {
+    border-radius: 12px 0 0 0;
+  }
+  .treedlook {
+    border-radius: 0 12px 0 0;
+  }
+  .infatek {
+    border-radius: 0 0 0 12px;
+  }
+  .ultimatecard {
+    border-radius: 0 0 12px 0;
   }
 }
 
