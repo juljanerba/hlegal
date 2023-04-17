@@ -14,6 +14,10 @@ body {
   width: 1px;
 }
 
+img {
+  width: 100%;
+}
+
 .center {
   padding-left: calc(50vw - 157px);
   padding-right: calc(50vw - 157px);
@@ -240,6 +244,7 @@ a:hover {
   --color-grey-bg-alt: #EDEDF7;
   --color-grey-text: #B3B3BA;
   --color-grey-separator: #E6E6F0;
+  --color-basic-black: #000000;
   --color-text-pink-gradient: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   --color-bg-gradient: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
@@ -555,8 +560,7 @@ a:hover {
 }
 @media screen and (min-width: 1920px) {
   .clients {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 100px 60px;
   }
   .hillel {
     border-radius: 12px 0 0 0;
@@ -569,6 +573,90 @@ a:hover {
   }
   .ultimatecard {
     border-radius: 0 0 12px 0;
+  }
+}
+.publications {
+  padding: 30px;
+  background: var(--color-grey-bg);
+}
+.publications .category--link {
+  margin: 0 0 5px;
+}
+.publications h2 {
+  font-size: 30px;
+  background: var(--color-text-pink-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 30px;
+}
+.publications__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.publications__content-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: var(--color-basic-white);
+  border-radius: 8px;
+}
+.publications__content-item img {
+  border-radius: 8px 8px 0 0;
+}
+.publications__content-item-info {
+  padding: 30px;
+}
+.publications__content-item-info h3 {
+  font-size: 16px;
+  color: var(--color-active-regular);
+  position: relative;
+  margin: 0 0 15px;
+}
+.publications__content-item-info h4 {
+  font-size: 12px;
+  color: var(--color-grey-text);
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+.publications__content-item-info p {
+  font-size: 14px;
+  color: var(--color-basic-black);
+  padding-top: 15px;
+  border-top: 4px solid var(--color-grey-separator);
+}
+
+@media screen and (min-width: 768px) {
+  .publications {
+    padding: 30px 60px;
+  }
+  .publications h2 {
+    font-size: 38px;
+  }
+  .publications__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .publications__content-item-last {
+    grid-column: 1/-1;
+  }
+  .publications__content-item-last img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .publications__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .publications__content-item-last {
+    grid-column: 3/-1;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .publications {
+    padding: 30px 160px;
   }
 }
 
