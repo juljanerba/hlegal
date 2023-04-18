@@ -1,0 +1,136 @@
+footer {
+  background: var(--color-grey-bg);
+  padding: 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+
+  .address {
+    border-top: 2px solid var(--color-grey-separator);
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+
+    &-street {
+      font-size: 16px;
+      color: var(--color-main-regular);
+      margin: 0;
+    }
+
+    &-map {
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--color-active-regular);
+      text-decoration: none;
+      margin: 0;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      height: 38px;
+      width: 38px;
+      margin: 0;
+    }
+
+    &-number {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--color-main-alt);
+      text-decoration: none;
+      margin: 0;
+    }
+
+    &-email {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-active-regular);
+      text-decoration: none;
+      margin: 0;
+    }
+  }
+
+  .copyrights {
+    font-size: 16px;
+    color: var(--color-grey-text);
+    margin: 9px 0 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    position: relative;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    .address {
+      flex-direction: row;
+      gap:26px;
+      &-street {
+        position: relative;
+
+        &:after {
+          content: " ";
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: var(--color-grey-text);
+          display: inline-block;
+          position: absolute;
+          top: 33%;
+          right: -16px;
+        }
+      }
+    }
+
+    .contacts {
+      flex-direction: row;
+      gap:26px;
+      &-number {
+        position: relative;
+
+        &:after {
+          content: " ";
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: var(--color-grey-text);
+          display: inline-block;
+          position: absolute;
+          top: 33%;
+          right: -16px;
+        }
+
+        &:before {
+          content: " ";
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: var(--color-grey-text);
+          display: inline-block;
+          position: absolute;
+          top: 33%;
+          left: -16px;
+        }
+      }
+    }
+
+    .copyrights {
+      position: absolute;
+      top:30px;
+      right: 60px;
+      margin: 0;
+    }
+  }
+}
+

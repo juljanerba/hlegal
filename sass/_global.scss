@@ -37,7 +37,8 @@ h1, h2, h3, h4 {
 }
 
 a {
-  color: var(--color-active-regular)
+  color: var(--color-active-regular);
+  cursor: pointer;
 }
 
 a:hover {

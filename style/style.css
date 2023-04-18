@@ -35,6 +35,7 @@ h1, h2, h3, h4 {
 
 a {
   color: var(--color-active-regular);
+  cursor: pointer;
 }
 
 a:hover {
@@ -110,7 +111,7 @@ a:hover {
 .header--lang-bar .separator {
   display: none;
 }
-.header--lang-bar .adress {
+.header--lang-bar .address {
   display: none;
 }
 .header--lang-bar .facebook {
@@ -133,6 +134,11 @@ a:hover {
 }
 .header--bar .logo-link img {
   width: 69px;
+}
+.header--bar .slash {
+  display: flex;
+  width: 12px;
+  height: 26px;
 }
 .header--bar p {
   color: var(--color-basic-white);
@@ -165,7 +171,7 @@ a:hover {
     color: var(--color-grey-separator);
     margin: 6px;
   }
-  .header--lang-bar .adress {
+  .header--lang-bar .address {
     display: flex;
     color: var(--color-grey-text);
     font-size: 16px;
@@ -657,6 +663,126 @@ a:hover {
 @media screen and (min-width: 1920px) {
   .publications {
     padding: 30px 160px;
+  }
+}
+footer {
+  background: var(--color-grey-bg);
+  padding: 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+footer .address {
+  border-top: 2px solid var(--color-grey-separator);
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+footer .address-street {
+  font-size: 16px;
+  color: var(--color-main-regular);
+  margin: 0;
+}
+footer .address-map {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-active-regular);
+  text-decoration: none;
+  margin: 0;
+}
+footer .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+footer .contacts img {
+  height: 38px;
+  width: 38px;
+  margin: 0;
+}
+footer .contacts-number {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-main-alt);
+  text-decoration: none;
+  margin: 0;
+}
+footer .contacts-email {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-active-regular);
+  text-decoration: none;
+  margin: 0;
+}
+footer .copyrights {
+  font-size: 16px;
+  color: var(--color-grey-text);
+  margin: 9px 0 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    position: relative;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  footer .address {
+    flex-direction: row;
+    gap: 26px;
+  }
+  footer .address-street {
+    position: relative;
+  }
+  footer .address-street:after {
+    content: " ";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-grey-text);
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    right: -16px;
+  }
+  footer .contacts {
+    flex-direction: row;
+    gap: 26px;
+  }
+  footer .contacts-number {
+    position: relative;
+  }
+  footer .contacts-number:after {
+    content: " ";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-grey-text);
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    right: -16px;
+  }
+  footer .contacts-number:before {
+    content: " ";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-grey-text);
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    left: -16px;
+  }
+  footer .copyrights {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    margin: 0;
   }
 }
 

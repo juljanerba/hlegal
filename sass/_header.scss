@@ -33,7 +33,7 @@
       display: none;
     }
 
-    .adress {
+    .address {
       display: none;
     }
 
@@ -61,6 +61,13 @@
       img {
         width: 69px;
       }
+    }
+    .slash {
+      display: flex;
+      width: 12px;
+      height: 26px;
+
+
     }
 
     p {
@@ -99,7 +106,7 @@
         margin: 6px;
       }
 
-      .adress {
+      .address {
         display: flex;
         color: var(--color-grey-text);
         font-size: 16px;
@@ -126,6 +133,7 @@
 
       .slash {
         display: none;
+
       }
 
       p {
