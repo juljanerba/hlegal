@@ -6,7 +6,6 @@
 
   .slider {
     background: #F5F5FA;
-
     //margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -73,6 +72,65 @@
   }
 }
 
+.team-page {
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 30px 60px;
+
+  &-title {
+    background: var(--color-text-pink-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+
+  &-employee {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-item {
+      position: relative;
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+        margin: 0 0 15px;
+      }
+
+      &-name {
+        font-size: 16px;
+        color: var(--color-main-regular);
+        margin: 0 0 5px;
+      }
+
+      &-position {
+        font-size: 14px;
+        color: var(--color-grey-text);
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .arrow {
+        background: var(--color-grey-bg);
+        padding: 8px 11px;
+        border: transparent;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+      }
+      svg.arrow:hover{
+        path {
+          stroke: var(--color-accent);
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team {
     background: var(--color-basic-white);
@@ -100,6 +158,22 @@
       }
     }
   }
+
+  .team-page {
+    padding: 60px;
+
+    &-title {
+      margin-bottom: 60px;
+    }
+
+    &-employee {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+
+    }
+
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -122,6 +196,21 @@
       }
     }
   }
+  .team-page {
+    align-items: center;
+
+    &-title {
+      padding-right: 180px;
+      padding-left: 180px;
+
+    }
+
+    &-employee {
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -143,7 +232,17 @@
 @media screen and (min-width: 1920px) {
   .team {
     .slider {
-margin: 0 160px;
+      margin: 0 160px;
+    }
+  }
+
+  .team-page {
+    &-title {
+      padding-left: 280px;
+      padding-right: 280px;
     }
   }
 }
+
+
+

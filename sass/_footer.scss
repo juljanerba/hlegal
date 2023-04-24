@@ -6,7 +6,7 @@ footer {
   gap: 21px;
 
   .address {
-    border-top: 2px solid var(--color-grey-separator);
+    //border-top: 2px solid var(--color-grey-separator);
     padding-top: 30px;
     display: flex;
     flex-direction: column;
@@ -36,10 +36,13 @@ footer {
     align-items: center;
     gap: 10px;
 
-    img {
-      height: 38px;
-      width: 38px;
-      margin: 0;
+    .facebook {
+      svg {
+        height: 38px;
+        width: 38px;
+        margin: 0;
+        fill: var(--color-active-regular)
+      }
     }
 
     &-number {
@@ -75,7 +78,8 @@ footer {
 
     .address {
       flex-direction: row;
-      gap:26px;
+      gap: 26px;
+
       &-street {
         position: relative;
 
@@ -95,7 +99,8 @@ footer {
 
     .contacts {
       flex-direction: row;
-      gap:26px;
+      gap: 26px;
+
       &-number {
         position: relative;
 
@@ -127,10 +132,35 @@ footer {
 
     .copyrights {
       position: absolute;
-      top:30px;
+      top: 30px;
       right: 60px;
       margin: 0;
     }
+
+    &.light {
+      padding-left: 185px;
+      padding-right: 185px;
+
+      .copyrights {
+        position: static;
+      }
+    }
+
   }
 }
+
+@media screen and (min-width: 1024px) {
+  footer {
+    &.light {
+      padding-left: 60px;
+      padding-right: 60px;
+
+      .copyrights {
+        position: absolute;
+      }
+    }
+  }
+}
+
+
 

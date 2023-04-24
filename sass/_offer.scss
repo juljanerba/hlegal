@@ -4,37 +4,45 @@
   //background-size: 523px 600px;
   //background-repeat: no-repeat;
   //background-position: -74px 0;
-  .offer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 129px;
+  .background-gradient {
 
-    h1 {
-      font-size: 38px;
-      color: var(--color-basic-white);
-      max-width: 315px;
-      margin: 0 0 159px;
-      text-align: center;
-    }
-
-    .move-down {
+    .offer {
       display: flex;
-      width: 42px;
-      height: 42px;
-      margin-bottom: 30px;
-      background-image: url("../img/Scroll.svg");
-      background-repeat: no-repeat;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 129px;
 
-      &:hover {
-        background-image: url("../img/Scroll-active.svg");
+      h1 {
+        font-size: 38px;
+        color: var(--color-basic-white);
+        max-width: 315px;
+        margin: 0 0 159px;
+        text-align: center;
+      }
 
+      .move-down {
+        svg {
+          stroke: var(--color-basic-white);
+          width: 18px;
+          height: 9px;
+          background: transparent;
+          padding: 18px 12px 15px;
+          border: 2px solid rgba(255, 255, 255, 0.5);
+          border-radius: 50%;
+        }
+
+        &:hover {
+          svg {
+            stroke: #F0145A;
+            border: 2px solid rgba(240, 20, 90, 0.5);
+          }
+
+        }
       }
     }
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .offer-page {

@@ -15,12 +15,12 @@
     }
 
     li {
+      display: inline-block;
       a {
         text-decoration: none;
         color: var(--color-grey-text);
         font-size: 30px;
         font-weight: 700;
-
 
         &.active {
           background: var(--color-text-pink-gradient);
