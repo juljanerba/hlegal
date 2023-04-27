@@ -1,10 +1,9 @@
 .offer-page {
-
-  //background-image: url("../img/Symbol.svg");
-  //background-size: 523px 600px;
-  //background-repeat: no-repeat;
-  //background-position: -74px 0;
   .background-gradient {
+    background: url('../img/Symbol.svg') 65% 0% no-repeat, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 20px;
+    background-size: 524px 600px, auto;
 
     .offer {
       display: flex;
@@ -22,12 +21,14 @@
       }
 
       .move-down {
+        margin-bottom: 30px;
+
         svg {
           stroke: var(--color-basic-white);
           width: 18px;
           height: 9px;
           background: transparent;
-          padding: 18px 12px 15px;
+          padding: 16px 10px 13px;
           border: 2px solid rgba(255, 255, 255, 0.5);
           border-radius: 50%;
         }
@@ -46,12 +47,17 @@
 
 @media screen and (min-width: 768px) {
   .offer-page {
-    .offer {
-      padding-top: 269px;
+    .background-gradient {
+      background-size: 893px 1053px, auto;
+      background-position: 64% 0;
 
-      h1 {
-        max-width: none;
-        margin: 0 0 417px;
+      .offer {
+        padding-top: 269px;
+
+        h1 {
+          max-width: none;
+          margin: 0 0 417px;
+        }
       }
     }
   }
@@ -59,12 +65,17 @@
 
 @media screen and (min-width: 1024px) {
   .offer-page {
-    .offer {
-      padding-top: 245px;
+    .background-gradient {
+      background-size: 670px 768px, auto;
+      background-position: 49% 0;
 
-      h1 {
-        max-width: none;
-        margin: 0 0 289px;
+      .offer {
+        padding-top: 245px;
+
+        h1 {
+          max-width: none;
+          margin: 0 0 289px;
+        }
       }
     }
   }
@@ -72,12 +83,17 @@
 
 @media screen and (min-width: 1440px) {
   .offer-page {
-    .offer {
-      padding-top: 261px;
+    .background-gradient {
+      background-size: 638px 800px, auto;
+      background-position: 49% 0;
 
-      h1 {
-        max-width: none;
-        margin: 0 0 305px;
+      .offer {
+        padding-top: 261px;
+
+        h1 {
+          max-width: none;
+          margin: 0 0 305px;
+        }
       }
     }
   }
@@ -85,12 +101,17 @@
 
 @media screen and (min-width: 1920px) {
   .offer-page {
-    .offer {
-      padding-top: 361px;
+    .background-gradient {
+      background-size: 873px 1000px, auto;
+      background-position: 48% 0;
 
-      h1 {
-        max-width: none;
-        margin: 0 0 405px;
+      .offer {
+        padding-top: 361px;
+
+        h1 {
+          max-width: none;
+          margin: 0 0 405px;
+        }
       }
     }
   }

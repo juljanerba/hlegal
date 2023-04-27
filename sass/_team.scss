@@ -16,7 +16,6 @@
       justify-content: center;
       align-items: center;
 
-
       .photo {
         width: 100%;
 
@@ -66,10 +65,37 @@
       }
     }
 
-    .slider-item-active.slider-item {
+    input:checked + .slider-item {
       display: flex;
     }
+
+    &-label {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 30px;
+
+      &-item {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: var(--color-active-regular);
+        margin: 0 7px;
+        border-radius: 50%;
+        opacity: 0.2;
+      }
+
+      &-item:hover {
+        opacity: 1;
+      }
+    }
+
   }
+
+
+  //.slider-item-active.slider-item {
+  //  display: flex;
+  //}
 }
 
 .team-page {
@@ -122,7 +148,8 @@
         right: 0;
         bottom: 15px;
       }
-      svg.arrow:hover{
+
+      svg.arrow:hover {
         path {
           stroke: var(--color-accent);
         }
