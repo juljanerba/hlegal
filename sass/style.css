@@ -450,10 +450,10 @@ a:hover {
 }
 
 .offer-page .background-gradient {
-  background: url("../img/Symbol.svg") 65% 0% no-repeat, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
+  background: url("../img/Symbol.svg") 65% 0 no-repeat, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
   border-radius: 0 0 12px 12px;
-  margin-bottom: 20px;
   background-size: 524px 600px, auto;
+  position: relative;
 }
 .offer-page .background-gradient .offer {
   display: flex;
@@ -484,6 +484,28 @@ a:hover {
 .offer-page .background-gradient .offer .move-down:hover svg {
   stroke: #F0145A;
   border: 2px solid rgba(240, 20, 90, 0.5);
+}
+.offer-page .background-gradient:before {
+  content: "";
+  width: calc(100% - 80px);
+  height: 40px;
+  background-color: #E7E7F2;
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+  z-index: -1;
+  border-radius: 0 0 8px 8px;
+}
+.offer-page .background-gradient:after {
+  content: "";
+  width: calc(100% - 40px);
+  height: 40px;
+  background-color: #CACADB;
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  z-index: -1;
+  border-radius: 0 0 8px 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -604,7 +626,7 @@ a:hover {
   }
 }
 .team {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 60px;
   background: #F5F5FA;
   box-sizing: border-box;
@@ -734,6 +756,7 @@ a:hover {
 @media screen and (min-width: 768px) {
   .team {
     background: var(--color-basic-white);
+    margin-top: 90px;
   }
   .team .slider {
     border-radius: 12px;

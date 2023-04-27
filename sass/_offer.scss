@@ -1,9 +1,9 @@
 .offer-page {
   .background-gradient {
-    background: url('../img/Symbol.svg') 65% 0% no-repeat, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
+    background: url('../img/Symbol.svg') 65% 0 no-repeat, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
     border-radius: 0 0 12px 12px;
-    margin-bottom: 20px;
     background-size: 524px 600px, auto;
+    position: relative;
 
     .offer {
       display: flex;
@@ -41,6 +41,30 @@
 
         }
       }
+    }
+
+    &:before {
+      content: '';
+      width: calc(100% - 80px);
+      height: 40px;
+      background-color: #E7E7F2;
+      position: absolute;
+      bottom: -20px;
+      right: 40px;
+      z-index: -1;
+      border-radius: 0 0 8px 8px;
+    }
+
+    &:after {
+      content: '';
+      width: calc(100% - 40px);
+      height: 40px;
+      background-color: #CACADB;
+      position: absolute;
+      bottom: -10px;
+      right: 20px;
+      z-index: -1;
+      border-radius: 0 0 8px 8px;
     }
   }
 }

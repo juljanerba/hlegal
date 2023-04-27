@@ -1,5 +1,5 @@
 .team {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 60px;
   background: #F5F5FA;
   box-sizing: border-box;
@@ -161,6 +161,7 @@
 @media screen and (min-width: 768px) {
   .team {
     background: var(--color-basic-white);
+    margin-top: 90px;
 
     .slider {
       border-radius: 12px;
